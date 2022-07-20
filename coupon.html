@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coupon</title>
+    <style>
+      .coupen {
+        position: relative;
+        margin: auto;
+        margin-top: 200px;
+        /* margin-left: 700px; */
+        height: 400px;
+        width: 600px;
+        background-color: darkblue;
+      }
+      div::before {
+        position: absolute;
+        content: "";
+        color: white;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        border-radius: 50%;
+        top: 150px;
+        left: -50px;
+      }
+      div::after {
+        position: absolute;
+        content: "";
+        color: white;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        border-radius: 50%;
+        top: 150px;
+        right: -50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="coupen"></div>
+  </body>
+</html>
